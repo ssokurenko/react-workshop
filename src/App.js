@@ -1,4 +1,5 @@
 import React from 'react'
+import AppTitle from './components/AppTitle'
 
 class App extends React.Component {
   render () {
@@ -7,7 +8,7 @@ class App extends React.Component {
         <div className='row'>
           <div className='col-12'>
             <div className='lin-card'>
-              <h1>Todo</h1>
+              <AppTitle title='Todo App' />
             </div>
           </div>
         </div>
