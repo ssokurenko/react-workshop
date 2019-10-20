@@ -1,8 +1,9 @@
 import React from 'react'
 import AppTitle from './components/AppTitle'
+import Copyright from './components/Copyright'
 
 class App extends React.Component {
-  render () {
+  render() {
     return (
       <div className='container'>
         <div className='row'>
@@ -10,6 +11,9 @@ class App extends React.Component {
             <div className='lin-card'>
               <AppTitle title='Todo App' />
             </div>
+          </div>
+          <div className='col-12'>
+            <Copyright text='Google Inc.' />
           </div>
         </div>
       </div>
