@@ -7,6 +7,8 @@ class App extends React.Component {
 
   titles = ['Todo', 'Welcome']
 
+  boxExpanded = eventData => console.log(eventData)
+
   render() {
     return (
       <div className='container'>
@@ -18,12 +20,16 @@ class App extends React.Component {
           </div>
           <div className='col-12'>
             <div className='lin-card'>
+
               <ExpandBox
                 title='Lorem ipsum'
-                text='Welcome to React. Welcome to React. Welcome to React. Welcome to React. ' />
+                text='Welcome to React. Welcome to React. Welcome to React. Welcome to React. '
+                onExpanded={this.boxExpanded.bind(this)} />
+  
               <ExpandBox
-                title='Lorem ipsum 2'
-                text='Welcome to React. Second component' />
+                title='Lorem ipsum Two'
+                text='Welcome to React. Second component'
+                onExpanded={this.boxExpanded.bind(this)} />
             </div>
           </div>
           <div className='col-12'>
