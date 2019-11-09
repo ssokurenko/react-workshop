@@ -1,3 +1,5 @@
+// Stateless component example
+
 import React from 'react'
 
 const Copyright = props => {

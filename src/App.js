@@ -1,6 +1,7 @@
 import React from 'react'
 import AppTitle from './components/AppTitle'
 import Copyright from './components/Copyright'
+import ExpandBox from './components/ExpandBox'
 
 class App extends React.Component {
 
@@ -13,6 +14,16 @@ class App extends React.Component {
           <div className='col-12'>
             <div className='lin-card'>
               {this.titles.map((title, index) => <AppTitle title={title} key={index} />)}
+            </div>
+          </div>
+          <div className='col-12'>
+            <div className='lin-card'>
+              <ExpandBox
+                title='Lorem ipsum'
+                text='Welcome to React. Welcome to React. Welcome to React. Welcome to React. ' />
+              <ExpandBox
+                title='Lorem ipsum 2'
+                text='Welcome to React. Second component' />
             </div>
           </div>
           <div className='col-12'>
